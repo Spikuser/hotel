@@ -1,3 +1,21 @@
-body{
+body {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Average Sans;
+    font-weight: 400;
+}
 
+h1 {
+    @extend %opensans-400;
+    color: #353637;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+h3 {
+    @extend %averagesans-400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color:#959595;
 }

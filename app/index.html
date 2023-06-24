@@ -1,16 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Open+Sans:wght@300;400;600;700&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-    
+<header class="header">
+    <div class="header__inner">
+        <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link menu__list-link--active">Home</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Branch</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Search</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">About Us</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Blog</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Pages</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="menu__btn">
+            <span>Reservation</span>
+        </button>
+    </div>
+    <div class="header__content">
+        <div class="header__content-inner">
+            <h1 class="header__title">
+                Discover a hotel
+                that defies a new
+                dimension of luxury.
+            </h1>
+            <h4 class="header__subtitle">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy.
+            </h4>
+            <div class="header__buttons">
+                <button class="header__btn">
+                    <span>Get started</span>
+                </button>
+                <a class="header__video-link" href="#">
+                    <span>Watch video</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="check">
+        <div class="container check__container">
+            <div class="check__text">
+                <h1 class="check__title">
+                    Check Availability
+                </h1>
+                <h3 class="check__subtitle">
+                    It is a long established fact that a reader will be distracted<br> by the readable content of a
+                    page.
+                </h3>
+            </div>
+            <div class="check__inner">
+                <div class="check__img">
+                    <img src="images/check-bg.png" alt="check">
+                </div>
+                <div class="check__input">
+                    <form class="check__form" action="#">
+                        <div class="check__form-box">
+                            <p class="check__form-text">CHECK-IN</p>
+                            <input class="check__form-input" type="text" placeholder="Thu, 21 Jul 2022">
+                            <svg class="calendar-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.0172 1.89995H18.6288V0H17.7882V1.89995H15.6158V0H14.7753V1.89995H7.26118V0H6.42078V1.89995H4.24825V0H3.40768V1.89995H1.02854C0.893634 1.8996 0.76012 1.92599 0.635518 1.97754C0.510741 2.02892 0.397502 2.10459 0.301911 2.20018C0.206321 2.2956 0.130478 2.40919 0.0785732 2.53414C0.0268479 2.65909 -6.62605e-05 2.79295 -0.000240736 2.92839V20.5124C-0.000590225 20.648 0.0259729 20.7824 0.0775264 20.9079C0.129252 21.0334 0.204925 21.1473 0.300515 21.2432C0.396106 21.3393 0.509698 21.4154 0.634471 21.4673C0.759422 21.519 0.893285 21.5456 1.02854 21.5454H21.0172C21.1525 21.5456 21.2863 21.519 21.4113 21.4673C21.5361 21.4154 21.6496 21.3393 21.7452 21.2432C21.8408 21.1473 21.9167 21.0334 21.9682 20.9079C22.0198 20.7824 22.0463 20.648 22.046 20.5124V2.92839C22.0458 2.79295 22.0189 2.65909 21.9672 2.53414C21.9153 2.40919 21.8394 2.2956 21.7438 2.20018C21.6482 2.10459 21.535 2.02892 21.4102 1.97754C21.2856 1.92599 21.1521 1.8996 21.0172 1.89995V1.89995ZM21.2194 20.5125C21.2189 20.5661 21.1974 20.6175 21.1596 20.6554C21.1219 20.6934 21.0707 20.7149 21.0172 20.7154H1.02854C0.97507 20.7149 0.923868 20.6934 0.886118 20.6554C0.848369 20.6175 0.826877 20.5661 0.826354 20.5125V6.76514H21.2194L21.2194 20.5125ZM21.2194 5.91647H0.826309V2.92815C0.827008 2.87502 0.848678 2.82417 0.886602 2.78712C0.924524 2.7499 0.975553 2.72928 1.0285 2.72998H3.40764V4.28389H4.24821V2.72998H6.42074V4.28389H7.26114V2.72998H14.7752V4.28389H15.6158V2.72998H17.7882V4.28389H18.6288V2.72998H21.0172C21.0701 2.72928 21.1211 2.7499 21.1591 2.78712C21.197 2.82417 21.2187 2.87502 21.2194 2.92815L21.2194 5.91647Z"
+                                    fill="#4E4E4E" />
+                                <path d="M18.6397 10.2037H15.6367V11.049H18.6397V10.2037Z" fill="#767676" />
+                                <path d="M12.778 10.1665H9.77515V11.0118H12.778V10.1665Z" fill="#767676" />
+                                <path
+                                    d="M5.36761 8.99764C5.68287 8.99764 5.99098 9.09149 6.25292 9.26712C6.51505 9.44292 6.71917 9.69282 6.83992 9.9852C6.9605 10.2776 6.99195 10.5993 6.93061 10.9096C6.8691 11.22 6.71724 11.5051 6.49442 11.7287C6.27161 11.9526 5.98764 12.105 5.6785 12.1667C5.36954 12.2284 5.04905 12.1967 4.7579 12.0756C4.46676 11.9545 4.21792 11.7494 4.04281 11.4864C3.86771 11.2232 3.77422 10.9138 3.77422 10.5976C3.77474 10.1732 3.94285 9.7666 4.2415 9.46673C4.54014 9.16685 4.94522 8.99802 5.36763 8.9977L5.36761 8.99764ZM5.36761 8.21353C4.89805 8.21353 4.43913 8.35334 4.04857 8.6153C3.65817 8.87726 3.35394 9.24967 3.17409 9.68515C2.99444 10.1208 2.94743 10.6002 3.03901 11.0626C3.13075 11.525 3.35689 11.9498 3.68891 12.283C4.02094 12.6165 4.44403 12.8435 4.90451 12.9356C5.36499 13.0275 5.84243 12.9803 6.27634 12.8C6.71008 12.6195 7.08089 12.314 7.3418 11.9218C7.60271 11.5299 7.74199 11.069 7.74199 10.5975C7.74199 9.96524 7.49174 9.35882 7.04646 8.91181C6.60136 8.46478 5.99741 8.2135 5.3676 8.2135L5.36761 8.21353Z"
+                                    fill="#767676" />
+                                <path d="M6.004 10.1683H4.75171V11.0136H6.004V10.1683Z" fill="#767676" />
+                                <path d="M18.6397 12.9707H15.6367V13.816H18.6397V12.9707Z" fill="#767676" />
+                                <path d="M12.778 12.9337H9.77515V13.779H12.778V12.9337Z" fill="#767676" />
+                                <path d="M18.6397 15.7377H15.6367V16.583H18.6397V15.7377Z" fill="#767676" />
+                                <path d="M12.778 15.7001H9.77515V16.5454H12.778V15.7001Z" fill="#767676" />
+                                <path d="M6.85358 15.743H3.85059V16.5884H6.85358V15.743Z" fill="#767676" />
+                            </svg>
+
+                        </div>
+                        <div class="check__form-box">
+                            <p class="check__form-text">CHECK-OUT</p>
+                            <input class="check__form-input" type="text" placeholder="Fri, 22 Jul 2022">
+                            <svg class="calendar-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.0172 1.89995H18.6288V0H17.7882V1.89995H15.6158V0H14.7753V1.89995H7.26118V0H6.42078V1.89995H4.24825V0H3.40768V1.89995H1.02854C0.893634 1.8996 0.76012 1.92599 0.635518 1.97754C0.510741 2.02892 0.397502 2.10459 0.301911 2.20018C0.206321 2.2956 0.130478 2.40919 0.0785732 2.53414C0.0268479 2.65909 -6.62605e-05 2.79295 -0.000240736 2.92839V20.5124C-0.000590225 20.648 0.0259729 20.7824 0.0775264 20.9079C0.129252 21.0334 0.204925 21.1473 0.300515 21.2432C0.396106 21.3393 0.509698 21.4154 0.634471 21.4673C0.759422 21.519 0.893285 21.5456 1.02854 21.5454H21.0172C21.1525 21.5456 21.2863 21.519 21.4113 21.4673C21.5361 21.4154 21.6496 21.3393 21.7452 21.2432C21.8408 21.1473 21.9167 21.0334 21.9682 20.9079C22.0198 20.7824 22.0463 20.648 22.046 20.5124V2.92839C22.0458 2.79295 22.0189 2.65909 21.9672 2.53414C21.9153 2.40919 21.8394 2.2956 21.7438 2.20018C21.6482 2.10459 21.535 2.02892 21.4102 1.97754C21.2856 1.92599 21.1521 1.8996 21.0172 1.89995V1.89995ZM21.2194 20.5125C21.2189 20.5661 21.1974 20.6175 21.1596 20.6554C21.1219 20.6934 21.0707 20.7149 21.0172 20.7154H1.02854C0.97507 20.7149 0.923868 20.6934 0.886118 20.6554C0.848369 20.6175 0.826877 20.5661 0.826354 20.5125V6.76514H21.2194L21.2194 20.5125ZM21.2194 5.91647H0.826309V2.92815C0.827008 2.87502 0.848678 2.82417 0.886602 2.78712C0.924524 2.7499 0.975553 2.72928 1.0285 2.72998H3.40764V4.28389H4.24821V2.72998H6.42074V4.28389H7.26114V2.72998H14.7752V4.28389H15.6158V2.72998H17.7882V4.28389H18.6288V2.72998H21.0172C21.0701 2.72928 21.1211 2.7499 21.1591 2.78712C21.197 2.82417 21.2187 2.87502 21.2194 2.92815L21.2194 5.91647Z"
+                                    fill="#4E4E4E" />
+                                <path d="M18.6397 10.2037H15.6367V11.049H18.6397V10.2037Z" fill="#767676" />
+                                <path d="M12.778 10.1665H9.77515V11.0118H12.778V10.1665Z" fill="#767676" />
+                                <path
+                                    d="M5.36761 8.99764C5.68287 8.99764 5.99098 9.09149 6.25292 9.26712C6.51505 9.44292 6.71917 9.69282 6.83992 9.9852C6.9605 10.2776 6.99195 10.5993 6.93061 10.9096C6.8691 11.22 6.71724 11.5051 6.49442 11.7287C6.27161 11.9526 5.98764 12.105 5.6785 12.1667C5.36954 12.2284 5.04905 12.1967 4.7579 12.0756C4.46676 11.9545 4.21792 11.7494 4.04281 11.4864C3.86771 11.2232 3.77422 10.9138 3.77422 10.5976C3.77474 10.1732 3.94285 9.7666 4.2415 9.46673C4.54014 9.16685 4.94522 8.99802 5.36763 8.9977L5.36761 8.99764ZM5.36761 8.21353C4.89805 8.21353 4.43913 8.35334 4.04857 8.6153C3.65817 8.87726 3.35394 9.24967 3.17409 9.68515C2.99444 10.1208 2.94743 10.6002 3.03901 11.0626C3.13075 11.525 3.35689 11.9498 3.68891 12.283C4.02094 12.6165 4.44403 12.8435 4.90451 12.9356C5.36499 13.0275 5.84243 12.9803 6.27634 12.8C6.71008 12.6195 7.08089 12.314 7.3418 11.9218C7.60271 11.5299 7.74199 11.069 7.74199 10.5975C7.74199 9.96524 7.49174 9.35882 7.04646 8.91181C6.60136 8.46478 5.99741 8.2135 5.3676 8.2135L5.36761 8.21353Z"
+                                    fill="#767676" />
+                                <path d="M6.004 10.1683H4.75171V11.0136H6.004V10.1683Z" fill="#767676" />
+                                <path d="M18.6397 12.9707H15.6367V13.816H18.6397V12.9707Z" fill="#767676" />
+                                <path d="M12.778 12.9337H9.77515V13.779H12.778V12.9337Z" fill="#767676" />
+                                <path d="M18.6397 15.7377H15.6367V16.583H18.6397V15.7377Z" fill="#767676" />
+                                <path d="M12.778 15.7001H9.77515V16.5454H12.778V15.7001Z" fill="#767676" />
+                                <path d="M6.85358 15.743H3.85059V16.5884H6.85358V15.743Z" fill="#767676" />
+                            </svg>
+                        </div>
+                        <div class="check__form-box">
+                            <p class="check__form-text">GUESTS:</p>
+                            <input class="check__form-input" name="check__form-input--room" list="rooms"
+                                placeholder="1 Room" />
+                            <datalist id="rooms">
+                                <option value="1 room">
+                                <option value="2 rooms">
+                                <option value="3 rooms">
+                                <option value="4 rooms">
+                                <option value="5 rooms">
+                            </datalist>
+                        </div>
+                        <button class="check__form-btn" type="submit">
+                            CHECK AVAILABILITY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="container">
+            <div class="popular__inner">
+                <h1 class="popular__title">Our Most Populer Room</h1>
+                <h3 class="popular__subtitle">It is a long established fact that a reader will be distracted<br> by the
+                    readable content of a page.</h3>
+                <div class="popular__items">
+                    <a href="#" class="popular__link">
+                        <div class="popular__item">
+                            <img class="popular__img" src="images/room-1.jpg" alt="room">
+                            <div class="popular__description">
+                                <p class="popular__name">Deluxe Contrast Room
+                                </p>
+                                <div class="popular__data">
+                                    <p class="popular__data-text popular__data-text--size">
+                                        52 sqm
+                                    </p>
+                                    <p class="popular__data-text popular__data-text--bed">
+                                        2 Bed
+                                    </p>
+                                    <p class="popular__data-text popular__data-text--bath">
+                                        1 Bathroom
+                                    </p>
+                                </div>
+                                <p class="popular__item-cost">$200<span>/Night</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="popular__link">
+                        <div class="popular__item">
+                            <img class="popular__img" src="images/room-2.jpg" alt="room">
+                            <div class="popular__description">
+                                <p class="popular__name">Deluxe Contrast Room
+                                </p>
+                                <div class="popular__data">
+                                    <p class="popular__data-text popular__data-text--size">
+                                        52 sqm
+                                    </p>
+                                    <p class="popular__data-text popular__data-text--bed">
+                                        2 Bed
+                                    </p>
+                                    <p class="popular__data-text popular__data-text--bath">
+                                        1 Bathroom
+                                    </p>
+                                </div>
+                                <p class="popular__item-cost">$250<span>/Night</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="popular__link">
+                        <div class="popular__item">
+                            <img class="popular__img" src="images/room-3.jpg" alt="room">
+                            <div class="popular__description">
+                                <p class="popular__name">Deluxe Contrast Room
+                                </p>
+                                <div class="popular__data">
+                                    <p class="popular__data-text popular__data-text--size">
+                                        52 sqm
+                                    </p>
+                                    <p class="popular__data-text popular__data-text--bed">
+                                        2 Bed
+                                    </p>
+                                    <p class="popular__data-text popular__data-text--bath">
+                                        1 Bathroom
+                                    </p>
+                                </div>
+                                <p class="popular__item-cost">$280<span>/Night</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <div class="container">
+            <div class="facilities__inner">
+                <h3 class="facilities__subtitle">OUR SERVICES</h3>
+                <h1 class="facilities__title">Hotel Facilities</h1>
+                <div class="facilities__items">
+                    <div class="facilities__item">
+                        <p class="facilities__name facilities__name--pick-up">
+                            Pick up & Drop
+                        </p>
+                        <p class="facilities__text">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.
+                        </p>
+                    </div>
+                    <div class="facilities__item">
+                        <p class="facilities__name facilities__name--parking">
+                            Parking Space
+                        </p>
+                        <p class="facilities__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="facilities__item">
+                        <p class="facilities__name facilities__name--services">
+                            Room Services
+                        </p>
+                        <p class="facilities__text">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.
+                        </p>
+                    </div>
+                    <div class="facilities__item">
+                        <p class="facilities__name facilities__name--swimming">
+                            Swimming Pool
+                        </p>
+                        <p class="facilities__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="facilities__item">
+                        <p class="facilities__name facilities__name--internet">
+                            Fibre Internet
+                        </p>
+                        <p class="facilities__text">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.
+                        </p>
+                    </div>
+                    <div class="facilities__item">
+                        <p class="facilities__name facilities__name--breakfast">
+                            Breakfast
+                        </p>
+                        <p class="facilities__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="facilities__numbers">
+                <h5 class="facilities__numbers-item">
+                    302 +
+                    <span>Room & Suites</span>
+                </h5>
+                <h5 class="facilities__numbers-item">
+                    25
+                    <span>Restaurant</span>
+                </h5>
+                <h5 class="facilities__numbers-item">
+                    510 +
+                    <span>Exceptional Food</span>
+                </h5>
+                <h5 class="facilities__numbers-item">
+                    65
+                    <span>Destination</span>
+                </h5>
+            </div>
+        </div>
+    </section>
+    <section class="discover">
+        <div class="container">
+            <div class="discover__inner">
+                <div class="discover__content">
+                    <h1 class="discover__title">
+                        Discover Our History
+                    </h1>
+                    <p class="discover__text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy.
+                    </p>
+                    <p class="discover__text">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                    <div class="discover__buttons">
+                        <button class="discover__btn">
+                            <span>Get started</span>
+                        </button>
+                        <a class="discover__video-link" href="#">
+                            <span>Watch video</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="customers-slider">
+        <div class="container customers-slider__container">
+            <h1 class="customers-slider__title">Our Happy Customers </h1>
+            <h3 class="customers-slider__subtitle">Know about our clients, we are a woldwide corporate brand</h3>
+            <div class="customers-slider__inner">
+                <div class="customers-slider__item">
+                    <img class="customers-slider__img" src="images/slider/wade.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Wade Warren
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Louis Vuitton
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item customers-slider__item--main">
+                    <img class="customers-slider__img" src="images/slider/albert.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Albert Florise
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Nintendo
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item">
+                    <img class="customers-slider__img" src="images/slider/jenny.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Jenny Wilson
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Bank of America
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item">
+                    <img class="customers-slider__img" src="images/slider/wade.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Wade Warren
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Louis Vuitton
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item customers-slider__item--main">
+                    <img class="customers-slider__img" src="images/slider/albert.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Albert Florise
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Nintendo
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item">
+                    <img class="customers-slider__img" src="images/slider/jenny.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Jenny Wilson
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Bank of America
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item">
+                    <img class="customers-slider__img" src="images/slider/wade.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Wade Warren
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Louis Vuitton
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item customers-slider__item--main">
+                    <img class="customers-slider__img" src="images/slider/albert.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Albert Florise
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Nintendo
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+                <div class="customers-slider__item">
+                    <img class="customers-slider__img" src="images/slider/jenny.png" alt="slider images">
+                    <h3 class="customers-slider__name">
+                        Jenny Wilson
+                    </h3>
+                    <h5 class="customers-slider__company">
+                        Bank of America
+                    </h5>
+                    <p class="customers-slider__text">
+                        Necessary to deliver white glove,
+                        fully managed campaigns that surpass
+                        industry benchmarks.Take your career
+                        to next level.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="blog-slider">
+        <div class="container blog-slider__container">
+            <h3 class="blog-slider__subtitle">Our News</h3>
+            <h1 class="blog-slider__title">HOTEL BLOG</h1>
+            <div class="blog-slider__inner">
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-1.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">How To Travel With Map</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-2.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">Single Contrast Room</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-3.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">Luxery Twin Room</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-1.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">How To Travel With Map</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-2.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">Single Contrast Room</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-3.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">Luxery Twin Room</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-1.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">How To Travel With Map</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-2.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">Single Contrast Room</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item">
+                    <img class="blog-slider__img" src="images/blog-3.jpg" alt="room">
+                    <div class="blog-slider__info">
+                        <div class="blog-slider-about">
+                            <p class="blog-slider-descr blog-slider-descr--type">
+                                Travel
+                            </p>
+                            <p class="blog-slider-descr blog-slider-descr--comments">
+                                2 Comment
+                            </p>
+                        </div>
+                        <h1 class="blog-slider__name">Luxery Twin Room</h1>
+                        <p class="blog-slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <a href="#" class="blog-slider__link">Read more</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="sign-up">
+        <div class="container sign-up__container">
+            <h3 class="sign-up__subtitle">Stay in Touch</h3>
+            <h1 class="sign-up__title">Signup to receive news and updates from our hotel.</h1>
+            <form class="sign-up__form" action="#">
+                <input class="sign-up__form-input" type="email" placeholder="Enter Your Email Address" required>
+                <button class="sign-up__form-btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer-top__item footer-top__item--logo">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <p class="footer-top__text">Itawa is a responsive real estate landing page template.Itawa is a landing
+                    page template.Itawa template.</p>
+            </div>
+            <div class="footer-top__item footer-top__item--contact">
+                <h5 class="footer-top__title">
+                    Contact Us
+                </h5>
+                <p class="footer-top__adress">123 Business Centre London SW1A 1AA</p>
+                <p class="footer-top__phone">+1 0000 000 00</p>
+                <p class="footer-top__mail">info@businessname.com</p>
+            </div>
+            <div class="footer-top__item footer-top__item--follow">
+                <h5 class="footer-top__title">
+                    Follow us
+                </h5>
+                <img src="" alt="" class="footer-top__social-link">
+                <img src="" alt="" class="footer-top__social-link">
+                <img src="" alt="" class="footer-top__social-link">
+                <p class="footer-top__about">
+                    Itawa is a responsive real estate landing page template.Itawa is a landing page template.Itawatemplate.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bot">
+        <div class="footer__bot-info"></div>
+        <a href="" class="footer__bot-links"></a>
+        <a href="" class="footer__bot-links"></a>
+        <a href="" class="footer__bot-links"></a>
+    </div>
+</footer>
+
 
 <body>
-<script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
