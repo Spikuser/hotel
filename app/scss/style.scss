@@ -780,23 +780,25 @@
         border-radius: 10px;
         position: relative;
     }
-    &__container::before{
-    content: '';
-    background-image: url('../images/sign-up.svg');
-    position: absolute;
-    top:0;
-    right:0;
-    width: 98px;
-    height: 98px;        
+
+    &__container::before {
+        content: '';
+        background-image: url('../images/sign-up.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 98px;
+        height: 98px;
     }
-    &__container::after{
-    content: '';
-    background-image: url('../images/sign-up.svg');
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 98px;
-    height: 98px;           
+
+    &__container::after {
+        content: '';
+        background-image: url('../images/sign-up.svg');
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 98px;
+        height: 98px;
     }
 
     &__subtitle {
@@ -831,6 +833,7 @@
     }
 
     &__form-input {
+        padding-left: 20px;
         width: 354px;
         height: 45px;
         border-radius: 6px;
@@ -840,18 +843,113 @@
     }
 }
 
-.footer__top{
+.footer-top {
     margin-bottom: 150px;
     display: flex;
     justify-content: space-between;
     border: 1px solid #7587A0;
-    &__item{
+
+    &__item {
         max-width: 300px;
+        margin: 45px;
+        color: #A9A9A9;
+        @extend %averagesans-400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.32px;
+    }
+
+    &__text {
+        color: #A9A9A9;
+        @extend %averagesans-400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.28px;
+        margin-top: 20px;
+    }
+
+    &__title {
+        color: #131313;
+        @extend %opensans-400;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 26px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    &__social {
+        display: inline-block;
+    }
+
+    &__location {
+        position: relative;
+    }
+    &__phone {
+        position: relative;
+    }
+    &__mail {
+        position: relative;    
+    }
+    &__location::before {
+        content: "";
+        background-image: url('../images/location.svg');
+        position: absolute;
+        width: 12.768px;
+        height: 18.24px;
+        top: 8px;
+        left: -30px;
+    }
+
+    &__phone::before {
+        content: "";
+        background-image: url('../images/phone.svg');
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        top: 8px;
+        left: -30px;
+    }
+
+    &__mail::before {
+        content: "";
+        background-image: url('../images/mail.svg');
+        position: absolute;
+        width: 17.232px;
+        height: 10.928px;
+        top: 8px;
+        left: -30px;
     }
 }
 
-.footer__bot{
-    background-color:#B1BED0;
+.footer-bot {
+    display: flex;
+    justify-content: space-between;
+    background-color: #B1BED0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__name {
+        margin-left: 165px;
+        color: #0000006B;
+        font-family: Work Sans;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    &__links {
+        margin-right: 155px;
+    }
+
+    &__link {
+        color: #0000006B;
+        @extend %opensans-400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.28px;
+        margin-right: 10px;
+    }
 }
 
 
